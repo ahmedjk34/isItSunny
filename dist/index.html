@@ -8,7 +8,32 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="page-container"></div>
+    <div class="page-container">
+      <header>
+        <div class="logoContainer">
+          <img src="assets/logo.svg" class="logo" alt="sun-logo" />
+          <h2>IsItSunny?</h2>
+        </div>
+        <div class="inputContainer">
+          <input type="text" name="searchBar" id="searchBar" />
+          <button id="search">
+            <img src="assets/search.svg" alt="search" class="searchIcon" />
+          </button>
+        </div>
+        <button id="changeTemp">
+          <span class="bold">°C</span>
+          /
+          <span class="light">°F</span>
+        </button>
+      </header>
+      <main></main>
+      <footer>
+        <span> Made with </span>
+        <img src="assets/love.svg" alt="love" class="footerIcon" />
+        <span>by ahmedjk34 on Github</span>
+        <img src="assets/github.svg" alt="Github" class="footerIcon" />
+      </footer>
+    </div>
   </body>
   <script type="text/javascript" src="bundle.js"></script>
 </html>
