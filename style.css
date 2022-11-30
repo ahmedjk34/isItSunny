@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Rubik+Distressed&family=Satisfy&family=Sono:wght@600&display=swap");
+/*
+Fonts:
+font-family: 'Lora', serif;
+font-family: 'Rubik Distressed', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Sono', sans-serif;
+
+*/
+:root {
+  --bgc1: #343a40;
+  --main-color: #f59e0b;
+  --secondary-color: #ea580c;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +20,104 @@
   box-sizing: border-box;
 }
 .page-container {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 1fr 8fr 0.75fr /1fr;
+}
+button:hover {
+  cursor: pointer;
+}
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--bgc1);
+  color: wheat;
+  font-family: "Lora", serif;
+}
+/*logo*/
+.logoContainer {
+  margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo {
+  width: 40px;
+  height: auto;
+}
+/*search bar*/
+.inputContainer {
+  margin-right: auto;
+  width: max(40%, 25rem);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#searchBar {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 3px solid var(--main-color);
+  border-radius: 0.2rem;
+}
+#search {
+  position: absolute;
+  background-color: var(--secondary-color);
+  right: 0;
+  height: calc(-6px + 100%);
+  width: 15%;
+  box-sizing: content-box;
+  border: 3px solid var(--secondary-color);
+  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchIcon {
+  width: 30px;
+  height: auto;
+}
+/*C to F & reverse*/
+#changeTemp {
+  margin-left: 1rem;
+  width: min(12rem, 15%);
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: black;
+  font-size: x-large;
+  font-family: monospace;
+  scale: 100%;
+}
+#changeTemp:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.03);
+  transition: transform 0.25s;
+}
+.bold {
+  font-weight: 900;
+}
+.light {
+  font-weight: 100;
+}
+/*FOOTER*/
+footer {
+  background-color: var(--bgc1);
+  color: white;
+  font-family: "Satisfy", cursive;
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.footerIcon {
+  width: 20px;
+  height: auto;
 }
