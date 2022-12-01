@@ -14,3 +14,4 @@ export const getWeatherToday = async (cityName) => {
   const data = await response.json();
   if (response.ok) return data;
 };
+export const getWeatherOnLoad = async () => {};

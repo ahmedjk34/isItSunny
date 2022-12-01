@@ -3,6 +3,9 @@ import { createMainWeatherCard } from "./DOMElements";
 //search bar
 const searchBar = document.getElementById("searchBar");
 const searchButton = document.getElementById("search");
+//get the location & show weather on load
+window.onload = () => {};
+//search Functionality
 searchButton.addEventListener("click", () => {
   createMainWeatherCard(searchBar.value);
 });
