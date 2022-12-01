@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +30,33 @@
           <span class="light">°F</span>
         </button>
       </header>
-      <main></main>
+      <main>
+        <div class="todaysWeather">
+          <div class="cityInfo">
+            <h1 id="cityName"></h1>
+            <!--To add a space between the name & temp-->
+            <span>&nbsp;&nbsp;</span>
+            <h1 id="mainTemp"></h1>
+            <img class="icon" src="" alt="" srcset="" id="weatherIcon" />
+          </div>
+          <div class="cityInfoExtra">
+            <span id="country"></span>
+            <span id="weatherDesc"></span>
+          </div>
+        </div>
+        <div class="weatherInfo">
+          <div class="tempInfo">
+            <span id="minTemp"><a></a> 31°</span>
+            <span id="maxTemp"><a></a> 36°</span>
+            <span id="feelsLike"><a></a> 34.5°</span>
+          </div>
+          <div class="otherInfo">
+            <span id="pressure"><a></a> 40 Pa</span>
+            <span id="humidity"><a></a> 23 %rh</span>
+            <span id="wind"><a></a> 31 kn</span>
+          </div>
+        </div>
+      </main>
       <footer>
         <span> Made with </span>
         <img src="assets/love.svg" alt="love" class="footerIcon" />
