@@ -15,7 +15,6 @@ const createWeatherInfo = (data) => {
   humidity.textContent = "Humidity: " + data.main.humidity + " %rh";
   wind.textContent = "Wind Speed: " + data.wind.speed + " kn";
 };
-
 export const createMainWeatherCard = async (response) => {
   //ids
   const cityName = document.getElementById("cityName");
